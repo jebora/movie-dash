@@ -15,9 +15,9 @@ movies = [
 
 movies.each do |movie|
   Movie.create(
-    title: movie[:title],
-    genre: movie[:genre],
-    year: movie[:year],
-    rating: movie[:rating]
+    title: movie['title'],
+    genre: movie['genre'],
+    year: movie['year'],
+    rating: movie['rating']
   )
 end
